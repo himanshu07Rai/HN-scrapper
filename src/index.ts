@@ -5,6 +5,7 @@ const app: Express = express();
 import { createServer } from "http";
 const httpServer = createServer(app);
 import { CONFIGS } from "./config";
+import { scrapeHackerNewsJob } from "./cron-jobs";
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
@@ -18,4 +19,5 @@ const PORT: number | string = CONFIGS.PORT;
 
 httpServer.listen(PORT, async () => {
     console.log(`::> Server running on PORT: ${PORT}`);
+    scrapeHackerNewsJob.start();
 });
