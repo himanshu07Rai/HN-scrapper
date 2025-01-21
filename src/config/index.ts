@@ -25,7 +25,16 @@ const GLOBAL_CONSTANTS = {
     SCRAPE_INTERVAL: parseInt(process.env.SCRAPE_INTERVAL!) || 18000,
     LOG_LEVEL: process.env.LOG_LEVEL || "info",
     DATABASE: {
-        URL: process.env.DATABASE_URL
+        host: process.env.DATABASE_HOST,
+        port: process.env.DATABASE_PORT,
+        user: process.env.DATABASE_USER,
+        password: process.env.DATABASE_PASSWORD,
+        database: process.env.DATABASE_NAME,
+        connectionLimit: parseInt(process.env.DATABASE_CONNECTION_LIMIT!) || 10,
+        waitForConnections: process.env.DATABASE_WAIT_FOR_CONNECTIONS === "true",
+        queueLimit: parseInt(process.env.DATABASE_QUEUE_LIMIT!) || 0,
+        enableKeepAlive: process.env.DATABASE_ENABLE_KEEP_ALIVE === "true",
+        keepAliveInitialDelay: parseInt(process.env.DATABASE_KEEP_ALIVE_INITIAL_DELAY!) || 0
     },
     HACKER_NEWS: {
         BASE_URL: "https://news.ycombinator.com",

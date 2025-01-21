@@ -4,7 +4,7 @@ import cors from "cors";
 const app: Express = express();
 import { createServer } from "http";
 const httpServer = createServer(app);
-import { CONFIGS } from "./config";
+import { CONFIGS } from "@/config";
 import { scrapeHackerNewsJob } from "./cron-jobs";
 
 app.use(express.json());

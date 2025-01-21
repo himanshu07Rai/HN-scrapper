@@ -22,7 +22,7 @@ function parseHackerNewsHTML(html: any) {
             stories.push({
                 title,
                 url,
-                timePosted: mysqlDate,
+                posted_at: mysqlDate,
                 points: parseInt(points.split(" ")[0]!, 10),
                 author
             });
