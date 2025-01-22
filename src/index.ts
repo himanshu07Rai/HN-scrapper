@@ -17,6 +17,20 @@ app.get("/healthz", (_, res) => {
 
 const PORT: number | string = CONFIGS.PORT;
 
+const shutdownGracefully = async () => {
+    try {
+        console.log("::> Shutting down server gracefully");
+        await httpServer.close();
+        process.exit(0);
+    } catch (error) {
+        console.error("::> Error shutting down server gracefully", error);
+        process.exit(1);
+    }
+};
+
+process.on("SIGTERM", shutdownGracefully);
+process.on("SIGINT", shutdownGracefully);
+
 httpServer.listen(PORT, async () => {
     console.log(`::> Server running on PORT: ${PORT}`);
     scrapeHackerNewsJob.start();
