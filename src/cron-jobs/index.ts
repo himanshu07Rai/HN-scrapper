@@ -4,10 +4,8 @@ import { axiosInstance } from "@/utils/axiosInstance";
 import { parseHackerNewsHTML } from "@/utils/scrapperUtil";
 import { pool } from "@/db";
 import { Story } from "@/types";
-
-// Retry configuration
-const MAX_RETRIES = 3;
-const INITIAL_DELAY = 6000; // 6 seconds
+import { MAX_RETRIES, INITIAL_DELAY } from "@/utils/konstants";
+import { app } from "@/index";
 
 async function wait(ms: number | undefined) {
     return new Promise((resolve) => setTimeout(resolve, ms));
@@ -32,6 +30,8 @@ async function scrapeWithRetry(retryCount = 0): Promise<void> {
             await wait(delay);
             return scrapeWithRetry(retryCount + 1);
         }
+        console.error("::> Max retries reached. Could not scrape Hacker News.");
+        app.emit("error", error);
     }
 }
 
