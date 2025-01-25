@@ -24,6 +24,7 @@ const GLOBAL_CONSTANTS = {
     PORT: process.env.PORT || 5000,
     SCRAPE_INTERVAL: parseInt(process.env.SCRAPE_INTERVAL!) || 18000,
     LOG_LEVEL: process.env.LOG_LEVEL || "info",
+    MONGO_URI: process.env.MONGO_URI || "mongodb://jon_snow:ygritte@localhost:27017/got_db",
     DATABASE: {
         host: process.env.DATABASE_HOST,
         port: process.env.DATABASE_PORT,

@@ -1,26 +1,18 @@
-import mysql, { PoolOptions } from "mysql2/promise";
+import mongoose from "mongoose";
 import { CONFIGS } from "@/config";
 
-const pool = mysql.createPool({
-    ...(CONFIGS.DATABASE as PoolOptions)
-});
-
-interface ConnectWithRetry {
-    (resolve?: () => void): Promise<void>;
-}
-
-const connectWithRetry: ConnectWithRetry = async (resolve) => {
+const connectWithRetry = async (resolve?: () => void): Promise<void> => {
     try {
-        console.log("Attempting to establish a database connection...");
-        const connection = await pool.getConnection();
-        console.log("Database connection established.");
-        connection.release();
+        console.log("Attempting to establish a MongoDB connection...");
+        await mongoose.connect(CONFIGS.MONGO_URI, {});
+        console.log("MongoDB connection established.");
         if (resolve) resolve();
     } catch (err: any) {
-        console.error("Database connection failed:", err.message);
+        console.error("MongoDB connection failed:", err.message);
         console.log("Retrying in 5 seconds...");
+        // Retry connection after a 5-second delay.
         setTimeout(() => connectWithRetry(resolve), 5000);
     }
 };
 
-export { connectWithRetry, pool };
+export { connectWithRetry };

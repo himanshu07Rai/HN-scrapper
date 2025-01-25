@@ -11,6 +11,7 @@ import { CONFIGS } from "@/config";
 import { ApiErrorHandler } from "./types";
 import { storyRoutes } from "./routes/stories";
 import { scrapeHackerNewsJob } from "./cron-jobs";
+import { connectWithRetry } from "./db";
 
 const morganFormat = ":method :url :status :response-time ms";
 
@@ -107,11 +108,14 @@ const shutdownGracefully = async () => {
 process.on("SIGTERM", shutdownGracefully);
 process.on("SIGINT", shutdownGracefully);
 
-httpServer.listen(PORT, async () => {
-    console.log(`::> Server running on PORT: ${PORT}`);
-    try {
-        scrapeHackerNewsJob.start();
-    } catch (error) {
-        console.error("::> Error starting cron job", error);
-    }
+connectWithRetry(() => {
+    httpServer.listen(PORT, async () => {
+        console.log(`::> Server running on PORT: ${PORT}`);
+        try {
+            // Start cron jobs or other background tasks after successful DB connection
+            scrapeHackerNewsJob.start();
+        } catch (error) {
+            console.error("::> Error starting cron job", error);
+        }
+    });
 });

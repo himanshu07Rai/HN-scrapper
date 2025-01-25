@@ -32,14 +32,19 @@ console.log("Catcher function:", catcher);
 // }
 
 interface CustomRequest extends Request {
-    // Add custom fields if necessary
+    query: {
+        page: number;
+        limit: number;
+    };
 }
 
 router.get(
     "/",
-    catcher(async (_: CustomRequest, res: any) => {
-        const stories: any = await getAllStories();
-        logger.info(`Fetched ${JSON.stringify(stories)} stories from the database.`);
+    catcher(async (req: CustomRequest, res: any) => {
+        const { page, limit } = req.query;
+        console.log({ page, limit });
+        const stories: any = await getAllStories({ page, limit });
+        logger.info(`Fetched ${JSON.stringify(stories.length)} stories from the database.`);
         res.json({ stories });
     })
 );
