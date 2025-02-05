@@ -46,3 +46,47 @@
 {"level":"\u001b[32minfo\u001b[39m","message":"{\"method\":\"GET\",\"url\":\"/stories?page=3&limit=10\",\"status\":\"200\",\"responseTime\":\"76.390\"}","timestamp":"2025-02-01T17:29:28.274Z"}
 {"level":"\u001b[32minfo\u001b[39m","message":"Fetched 7 stories from the database.","timestamp":"2025-02-01T17:29:39.151Z"}
 {"level":"\u001b[32minfo\u001b[39m","message":"{\"method\":\"GET\",\"url\":\"/stories?page=4&limit=10\",\"status\":\"200\",\"responseTime\":\"7.338\"}","timestamp":"2025-02-01T17:29:39.153Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"{\"method\":\"GET\",\"url\":\"/health\",\"status\":\"404\",\"responseTime\":\"0.962\"}","timestamp":"2025-02-05T18:23:03.721Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"{\"method\":\"GET\",\"url\":\"/health\",\"status\":\"404\",\"responseTime\":\"1.640\"}","timestamp":"2025-02-05T18:23:15.089Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"{\"method\":\"GET\",\"url\":\"/healthz\",\"status\":\"200\",\"responseTime\":\"1.996\"}","timestamp":"2025-02-05T18:23:37.417Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"{\"method\":\"GET\",\"url\":\"/healthz\",\"status\":\"200\",\"responseTime\":\"0.716\"}","timestamp":"2025-02-05T18:23:40.943Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Fetched 67 stories from the database.","timestamp":"2025-02-05T18:24:11.642Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"{\"method\":\"GET\",\"url\":\"/stories\",\"status\":\"200\",\"responseTime\":\"40.572\"}","timestamp":"2025-02-05T18:24:11.645Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Fetched 67 stories from the database.","timestamp":"2025-02-05T18:24:12.964Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"{\"method\":\"GET\",\"url\":\"/stories\",\"status\":\"304\",\"responseTime\":\"26.945\"}","timestamp":"2025-02-05T18:24:12.969Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Fetched 68 stories from the database.","timestamp":"2025-02-05T18:25:54.953Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"{\"method\":\"GET\",\"url\":\"/stories\",\"status\":\"200\",\"responseTime\":\"39.879\"}","timestamp":"2025-02-05T18:25:54.975Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Fetched 68 stories from the database.","timestamp":"2025-02-05T18:26:04.484Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"{\"method\":\"GET\",\"url\":\"/stories\",\"status\":\"304\",\"responseTime\":\"6.400\"}","timestamp":"2025-02-05T18:26:04.487Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Fetched 68 stories from the database.","timestamp":"2025-02-05T18:26:17.576Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"{\"method\":\"GET\",\"url\":\"/stories\",\"status\":\"304\",\"responseTime\":\"61.525\"}","timestamp":"2025-02-05T18:26:17.623Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Fetched 68 stories from the database.","timestamp":"2025-02-05T18:26:22.402Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"{\"method\":\"GET\",\"url\":\"/stories\",\"status\":\"304\",\"responseTime\":\"30.554\"}","timestamp":"2025-02-05T18:26:22.405Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Fetched 68 stories from the database.","timestamp":"2025-02-05T18:26:33.646Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"{\"method\":\"GET\",\"url\":\"/stories\",\"status\":\"304\",\"responseTime\":\"13.962\"}","timestamp":"2025-02-05T18:26:33.648Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Fetched 68 stories from the database.","timestamp":"2025-02-05T18:26:35.965Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"{\"method\":\"GET\",\"url\":\"/stories\",\"status\":\"304\",\"responseTime\":\"18.052\"}","timestamp":"2025-02-05T18:26:35.967Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Fetched 68 stories from the database.","timestamp":"2025-02-05T18:26:51.824Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"{\"method\":\"GET\",\"url\":\"/stories\",\"status\":\"304\",\"responseTime\":\"37.535\"}","timestamp":"2025-02-05T18:26:51.831Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Fetched 68 stories from the database.","timestamp":"2025-02-05T18:26:54.612Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"{\"method\":\"GET\",\"url\":\"/stories\",\"status\":\"304\",\"responseTime\":\"24.460\"}","timestamp":"2025-02-05T18:26:54.613Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Fetched 68 stories from the database.","timestamp":"2025-02-05T18:27:17.417Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"{\"method\":\"GET\",\"url\":\"/stories\",\"status\":\"304\",\"responseTime\":\"33.395\"}","timestamp":"2025-02-05T18:27:17.419Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Fetched 68 stories from the database.","timestamp":"2025-02-05T18:27:23.223Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"{\"method\":\"GET\",\"url\":\"/stories\",\"status\":\"304\",\"responseTime\":\"9.564\"}","timestamp":"2025-02-05T18:27:23.224Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Fetched 68 stories from the database.","timestamp":"2025-02-05T18:27:32.979Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"{\"method\":\"GET\",\"url\":\"/stories\",\"status\":\"304\",\"responseTime\":\"31.184\"}","timestamp":"2025-02-05T18:27:32.981Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Fetched 68 stories from the database.","timestamp":"2025-02-05T18:27:39.885Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"{\"method\":\"GET\",\"url\":\"/stories\",\"status\":\"304\",\"responseTime\":\"24.271\"}","timestamp":"2025-02-05T18:27:39.888Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Fetched 68 stories from the database.","timestamp":"2025-02-05T18:27:42.727Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"{\"method\":\"GET\",\"url\":\"/stories\",\"status\":\"304\",\"responseTime\":\"22.646\"}","timestamp":"2025-02-05T18:27:42.737Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Fetched 68 stories from the database.","timestamp":"2025-02-05T18:27:47.688Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"{\"method\":\"GET\",\"url\":\"/stories\",\"status\":\"304\",\"responseTime\":\"6.509\"}","timestamp":"2025-02-05T18:27:47.690Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Fetched 68 stories from the database.","timestamp":"2025-02-05T18:27:49.443Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"{\"method\":\"GET\",\"url\":\"/stories\",\"status\":\"304\",\"responseTime\":\"32.321\"}","timestamp":"2025-02-05T18:27:49.445Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Fetched 68 stories from the database.","timestamp":"2025-02-05T18:27:58.882Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"{\"method\":\"GET\",\"url\":\"/stories\",\"status\":\"304\",\"responseTime\":\"24.262\"}","timestamp":"2025-02-05T18:27:58.883Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Fetched 68 stories from the database.","timestamp":"2025-02-05T18:28:16.679Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"{\"method\":\"GET\",\"url\":\"/stories\",\"status\":\"304\",\"responseTime\":\"69.248\"}","timestamp":"2025-02-05T18:28:16.690Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Fetched 68 stories from the database.","timestamp":"2025-02-05T18:29:21.845Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"{\"method\":\"GET\",\"url\":\"/stories\",\"status\":\"304\",\"responseTime\":\"16.331\"}","timestamp":"2025-02-05T18:29:21.846Z"}
